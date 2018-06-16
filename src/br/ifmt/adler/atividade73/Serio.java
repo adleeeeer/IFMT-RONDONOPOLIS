@@ -34,17 +34,17 @@ public class Serio {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("(0) Escreva a quantidade de pessoas na cidade: ");
+		System.out.print("(Insira) Escreva a quantidade de pessoas na cidade: ");
 		persons = scanner.nextInt();
 
 		for (int i = 0; i < persons; i++) {
 			int filhos = 0;
 			float salario = 0.0f;
 
-			System.out.print("(" + i + ") Escreva a quantidade de filhos: ");
+			System.out.print("(N° " + i + ") Escreva a quantidade de filhos: ");
 			filhos = scanner.nextInt();
 
-			System.out.print("(" + i + ")  Informe o seu salário mensal: ");
+			System.out.print("(N° " + i + ")  Informe o seu salário mensal: ");
 			salario = scanner.nextFloat();
 
 			personsData.add(new PersonConstructor(filhos, salario));
@@ -67,6 +67,10 @@ public class Serio {
 		mediaFilhos = (int) (mediaFilhos / personsCount);
 		mediaSalario = (mediaSalario / personsCount);
 
+		for (int i = 0; i < 200; i++){
+			System.out.println("");
+		}
+		
 		System.out.println("----------------------------------------------------------");
 		System.out.println("                IFMT - CAMPUS RONDONOPOLIS                ");
 		System.out.println("                                                          ");
