@@ -1,4 +1,4 @@
-package br.ifmt.adler.atividade64;
+package br.ifmt.adler.atividade75;
 
 /**
  * Copyright (C) Adler Lopes, all rights reserved unauthorized copying of this
@@ -9,7 +9,7 @@ package br.ifmt.adler.atividade64;
  * C O P I A N A O C O M E D I A
  */
 
-public class Fvck {
+public class BroFazSol {
 
 	public static void main(String[] args) {
 
@@ -18,19 +18,26 @@ public class Fvck {
 		System.out.println("                                                          ");
 		System.out.println("             Algoritmo e lógica da programação            ");
 		System.out.println("                                                          ");
-		System.out.println("                      Atividade 74                        ");
+		System.out.println("                      Atividade 75                        ");
 		System.out.println("----------------------------------------------------------");
+		
+		int first = 0, second = 0;
+		
+		String broadcast = "";
 
-		for (int i = 0; i <= 10; i++) {
-
-			System.out.println("----------------------------------------------------------");
-			System.out.println("                Tabuada do número: " + i + "              ");
-			System.out.println("----------------------------------------------------------");
-
-			for (int ix = 0; ix <= 10; ix++) {
-				System.out.println("" + i + "*" + ix + " resposta " + (i * ix));
+		while (first <= 10) {
+			second = 1;
+			
+			broadcast = "(!) F: " + first  + " : ";
+			
+			while (second <= 10) {
+				broadcast = broadcast + ", " + second;
+				second += 1;
 			}
-
+			
+			first += 1;
+			
+			System.out.println(broadcast);
 		}
 	}
 
